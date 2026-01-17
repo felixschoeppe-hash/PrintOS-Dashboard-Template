@@ -1,0 +1,25 @@
+/* Fix for ResponsiveContainer chart rendering issues */
+
+/* Ensure all chart containers have minimum dimensions */
+.recharts-responsive-container {
+  min-width: 100px !important;
+  min-height: 100px !important;
+}
+
+/* Ensure parent containers are ready before charts render */
+.industrial-card .recharts-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Fix for chart containers */
+.industrial-card div[class*="h-80"] {
+  min-height: 320px !important;
+  position: relative;
+}
+
+/* Ensure ResponsiveContainer parent has dimensions */
+.industrial-card .recharts-responsive-container-wrapper {
+  position: absolute !important;
+  inset: 0 !important;
+}

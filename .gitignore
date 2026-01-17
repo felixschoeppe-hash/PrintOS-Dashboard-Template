@@ -1,0 +1,14 @@
+# Secrets
+.env
+secrets.txt
+
+# System & Tools
+.emergent/
+node_modules/
+backend/__pycache__/
+.vscode/
+.idea/
+*.log
+
+# Test Results
+test_reports/
